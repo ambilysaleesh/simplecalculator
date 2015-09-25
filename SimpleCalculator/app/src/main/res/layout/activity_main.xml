@@ -43,6 +43,7 @@
         android:layout_below="@+id/editText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:onClick="buttonseven"
         android:textStyle="bold" />
 
     <Button
@@ -54,6 +55,7 @@
         android:layout_alignTop="@+id/button_7"
         android:layout_toRightOf="@+id/button_7"
         android:layout_toEndOf="@+id/button_7"
+        android:onClick="buttoneight"
         android:textStyle="bold" />
 
     <Button
@@ -65,6 +67,7 @@
         android:layout_alignTop="@+id/button_8"
         android:layout_toRightOf="@+id/button_8"
         android:layout_toEndOf="@+id/button_8"
+        android:onClick="buttonnine"
         android:textStyle="bold" />
 
     <Button
@@ -76,6 +79,7 @@
         android:layout_below="@+id/button_7"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:onClick="buttonfour"
         android:textStyle="bold" />
 
     <Button
@@ -87,6 +91,7 @@
         android:layout_alignBottom="@+id/button_4"
         android:layout_toRightOf="@+id/button_7"
         android:layout_toEndOf="@+id/button_7"
+        android:onClick="buttonfive"
         android:textStyle="bold" />
 
     <Button
@@ -98,6 +103,7 @@
         android:layout_below="@+id/button_8"
         android:layout_alignLeft="@+id/button_9"
         android:layout_alignStart="@+id/button_9"
+        android:onClick="buttonsix"
         android:textStyle="bold" />
 
     <Button
@@ -109,6 +115,7 @@
         android:layout_below="@+id/button_4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:onClick="buttonone"
         android:textStyle="bold" />
 
     <Button
@@ -120,6 +127,7 @@
         android:layout_alignBottom="@+id/button_1"
         android:layout_alignLeft="@+id/button_5"
         android:layout_alignStart="@+id/button_5"
+        android:onClick="buttontwo"
         android:textStyle="bold" />
 
     <Button
@@ -131,6 +139,7 @@
         android:layout_below="@+id/button_6"
         android:layout_alignLeft="@+id/button_6"
         android:layout_alignStart="@+id/button_6"
+        android:onClick="buttonthree"
         android:textStyle="bold" />
 
     <Button
@@ -143,6 +152,7 @@
         android:layout_alignParentStart="true"
         android:layout_toLeftOf="@+id/button_2"
         android:layout_toStartOf="@+id/button_2"
+        android:onClick="buttondot"
         android:textStyle="bold" />
 
     <Button
@@ -154,6 +164,7 @@
         android:layout_below="@+id/button_2"
         android:layout_toRightOf="@+id/button_dot"
         android:layout_toEndOf="@+id/button_dot"
+        android:onClick="buttonzero"
         android:textStyle="bold" />
 
     <Button
@@ -165,6 +176,7 @@
         android:layout_alignBottom="@+id/button_0"
         android:layout_toRightOf="@+id/button_2"
         android:layout_toEndOf="@+id/button_2"
+        android:onClick="buttonclear"
         android:textStyle="bold" />
 
     <Button
@@ -176,6 +188,7 @@
         android:layout_alignTop="@+id/button_9"
         android:layout_toRightOf="@+id/textsimple_calc"
         android:layout_toEndOf="@+id/textsimple_calc"
+        android:onClick="buttonplus"
         android:textStyle="bold" />
 
     <Button
@@ -184,7 +197,7 @@
         android:layout_height="wrap_content"
         android:text="-"
         android:id="@+id/button_mins"
-
+        android:onClick="buttonminus"
         android:layout_alignTop="@+id/button_6"
         android:layout_alignLeft="@+id/button_multi"
         android:layout_alignStart="@+id/button_multi"
@@ -199,6 +212,7 @@
         android:layout_below="@+id/button_mins"
         android:layout_toRightOf="@+id/textsimple_calc"
         android:layout_toEndOf="@+id/textsimple_calc"
+        android:onClick="buttonmulti"
         android:textStyle="bold" />
 
     <Button
@@ -210,6 +224,7 @@
         android:layout_below="@+id/button_multi"
         android:layout_toRightOf="@+id/textsimple_calc"
         android:layout_toEndOf="@+id/textsimple_calc"
+        android:onClick="buttondiv"
         android:textStyle="bold" />
 
     <Button
@@ -220,6 +235,7 @@
         android:layout_above="@+id/button_div"
         android:layout_toRightOf="@+id/button_mins"
         android:layout_toEndOf="@+id/button_mins"
+        android:onClick="buttonequal"
         android:textStyle="bold" />
 
 </RelativeLayout>
