@@ -10,8 +10,8 @@ import android.widget.EditText;
 
 public class MainActivity extends ActionBarActivity {
     EditText totalResult;
-    int num1,numtemp;
-    String s = "";
+    float num1,numtemp;
+    String inputText = "";
     public String str ="";
     Character op = 'q';
 
@@ -68,16 +68,14 @@ public class MainActivity extends ActionBarActivity {
     public void buttonplus(View v){
         perform();
         op = '+';
-
     }
-
 
 
     public void buttonminus(View v){
         perform();
         op = '-';
-
     }
+
     public void buttonmulti(View v){
         perform();
         op = '*';
@@ -94,12 +92,9 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
-
     public void buttonclear(View v){
-        s = "";
         num1 = 0;
         totalResult.setText("");
-
     }
 
 
@@ -108,16 +103,14 @@ public class MainActivity extends ActionBarActivity {
 
 
     private void display(int i) {
-        s = s+Integer.toString(i);
-        totalResult.setText(s);
-        num1 = Integer.valueOf(s).intValue();
-
-
+        inputText = inputText + Integer.toString(i);
+        totalResult.setText(inputText);
+        num1 = Integer.valueOf(inputText).intValue();
     }
 
 
     private void perform() {
-        s = "";
+        inputText = "";
         numtemp = num1;
 
     }
@@ -125,40 +118,17 @@ public class MainActivity extends ActionBarActivity {
     private void calculate() {
 
         if(op == '+')
-            num1 = numtemp+num1;
+            num1 = numtemp + num1;
         else if(op == '-')
-            num1 = numtemp-num1;
+            num1 = numtemp - num1;
         else if(op == '/')
-            num1 = numtemp/num1;
+            num1 = numtemp / num1;
         else if(op == '*')
-            num1 = numtemp*num1;
+            num1 = numtemp * num1;
         totalResult.setText(""+num1);
     }
 
-   
 
 
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }
